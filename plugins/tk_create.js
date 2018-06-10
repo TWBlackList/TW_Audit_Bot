@@ -74,7 +74,7 @@ async function stageII(msg, bot) {
             state: 'fillDescription',
             selected_department
         })
-        const message = _trello.getFirstCardDesc(user_input);
+        const message = await _trello.getFirstCardDesc(selected_department);
         return await bot.sendMessage(msg.from.id, message, {
             reply_to_message_id: msg.message_id,
             reply_markup: {
