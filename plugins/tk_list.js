@@ -5,7 +5,8 @@ function checkLock(uid) {
 }
 
 async function listTickets(msg, bot) {
-    const { cards } = await _trello.listUserTicket(msg.from)
+    const data = await _trello.listUserTicket(msg.from)
+    const cards = data.cards;
     let message = ''
     if (cards.length == 0) {
         message = '您沒有處理中的回報單'
