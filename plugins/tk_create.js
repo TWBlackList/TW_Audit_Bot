@@ -74,7 +74,7 @@ async function stageII(msg, bot) {
             state: 'fillDescription',
             selected_department
         })
-        const message = '請輸入要回報的內容(圖片請使用外連)：'
+        const message = _trello.getFirstCardDesc(user_input);
         return await bot.sendMessage(msg.from.id, message, {
             reply_to_message_id: msg.message_id,
             reply_markup: {
