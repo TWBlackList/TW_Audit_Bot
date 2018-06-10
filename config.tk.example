@@ -1,0 +1,14 @@
+{
+    "trello":{
+       "developer_key":"TRELLO_DEVELOPER_KEY",
+       "auth_token":"TRELLO_AUTH_TOKEN"
+    },
+    "board":"BROAD_ID",
+    "err_report":0,
+    "webhook_port": WEBHOOK_PORT ,
+    "notification": NOTICE_GROUP_CHAT_ID ,
+    "op":[
+       ADMIN_USER_ID
+    ],
+    "bl":[]
+ }

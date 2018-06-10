@@ -1,0 +1,4 @@
+{
+    "api-key": "TELEGRAM_BOT_API_TOKEN",
+    "options": { "polling": true }
+}
