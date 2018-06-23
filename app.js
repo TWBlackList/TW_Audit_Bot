@@ -164,6 +164,7 @@ function decStart(command) {
 bot.on('message', (msg) => {
     // Preprocessor hook all messages
     try {
+        }
         global_e.preprocessors.forEach((preprocessor) => {
             preprocessor(msg, bot);
         });
